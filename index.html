@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+   <div class="box">
+        <center>
+        <h1 id="top">EXPENSE TRACKER</h1>
+        
+        </center>
+        <div class="wallet">
+            <h2>WALLET <i class="fa-solid fa-wallet"></i> </h2>
+            <div class="balance">
+                <h2>BALANCE: <span style="color: blue;font-weight: bold;">₹0.00</span></h2> 
+            </div>
+        </div>    
+        <div class="crd-deb">
+            <div id="credit">
+                <center>
+                <h3>CREDITED</h3>
+                <p class="add" style="color: green; font-size: large; font-weight: bold;">+₹0.00</p>
+                </center>
+            </div>
+            <div id="debit">
+                <center>
+                <h3>DEBITED</h3>
+                <p class="sub" style="color: red; font-size: large; font-weight: bold;">-₹0.00</p>
+                </center>
+            </div>
+        </div>
+        <div class="new">
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">FROM/TO :</label>
+                    <input type="text" id="text" placeholder="Enter Text...." />
+                </div>
+
+                <div class="form-control">
+                    <label for="type">TYPE :</label>
+                    <select id="type" name="type">
+                        <option value="credit">CREDIT</option>
+                        <option value="debit">DEBIT</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="amount">AMOUNT :</label>
+                    <input type="number" id="amount" placeholder="Enter amount..." /> 
+                </div>
+                <center>
+                <button class="btn">ENTER</button>
+                </center>
+            </form>
+        </div>    
+        <div class="recent">
+            <h2>RECENT TRANSACTIONS</h2>
+            <hr />
+            <ul class="list">
+                <li class="history">
+                    Cash <span class="minus">-₹0.00</span><button class="delete-btn">x</button>
+                </li>
+            </ul>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>

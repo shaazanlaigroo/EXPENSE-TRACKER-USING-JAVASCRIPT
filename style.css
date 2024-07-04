@@ -1,0 +1,465 @@
+*{
+    box-sizing: border-box;
+}
+.fa-solid fa-wallet{
+    color: black;
+}
+#type{
+    margin-left:40px;
+    padding: 3px;
+    width: 178px;
+    border: 3px solid  black;
+    font-weight:bold;
+    padding-left: 50px;
+}
+body{
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-shadow: 0 0 1rem inset;
+}
+.box{
+    box-shadow: 
+    0 0 1rem;
+    padding: 5mm;
+    background: linear-gradient(whitesmoke,lightblue);
+    width: 80%;
+}
+#top{
+    margin:0px 10px 50px 10px;
+    box-shadow: 
+    0 0 0.5rem;
+    padding: 5px;
+}
+.wallet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 0 0.5rem;
+}
+.crd-deb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: 20px;
+}
+#credit{
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:20px;
+    width: 150px;
+}
+#debit{
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:20px;
+    width: 150px;
+}
+.recent{
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:20px;
+    width:100%;
+    height: 100%;
+}
+.new{
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:8px;
+    width:100%;
+    height: 100%;
+}
+.form-control{
+    font-size: large;
+    font-weight:bold;
+}
+.btn{
+    padding: 5px;
+    margin: 6PX;
+    font-weight: bold;
+    border: 1mm solid;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#text,#amount{
+    border: 1mm solid;
+    margin: 1mm;
+    padding: 1mm;
+}
+#amount{
+    margin-left: 2mm;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.history{
+    background-color:grey;
+    box-shadow: 0 0 0.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    margin: 5px;  
+}
+.list li.plus{
+    border-right: 10px solid green;
+}
+.list li.minus{
+    border-right: 10px solid red;
+}
+.delete-btn{
+    margin-right: 20px;
+    cursor: pointer;
+    background-color:red;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;;
+}
+.list li:hover .delete-btn{
+    opacity: 1;
+}
+@media screen and (max-width: 1200px) {
+*{
+    box-sizing: border-box;
+}
+.fa-solid fa-wallet{
+    color: black;
+}
+body{
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-shadow: 0 0 1rem inset;
+}
+.box{
+    box-shadow: 
+    0 0 1rem;
+    padding: 5mm;
+    background: linear-gradient(whitesmoke,lightblue);
+    width: 80%;
+}
+#top{
+    margin:0px 10px 25px 5px;
+    box-shadow: 
+    0 0 0.5rem;
+    padding: 5px;
+    font-size: large;
+}
+.wallet{
+    margin: 0rem;
+    display:flex;
+    padding: 2px;
+    gap: 6rem;
+    box-shadow: 
+    0 0 0.5rem;
+    font-size: 2mm;
+
+}
+.crd-deb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-size: 3mm;
+}
+#credit{
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:5px;
+    width: 150px;
+}
+#debit{
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:5px;
+    width: 150px;
+}
+.recent{
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:5px;
+    width:100%;
+    height: 100%;
+    font-size: small;
+}
+.new{
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+    0 0 0.5rem;
+    margin:5px;
+    padding:8px;
+    width:100%;
+    height: 100%;
+}
+.form-control{
+    font-size: large;
+    font-weight:bold;
+}
+.btn{
+    padding: 5px;
+    margin: 6PX;
+    font-weight: bold;
+    border: 1mm solid;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+#text,#amount{
+    border: 1mm solid;
+    margin: 1mm;
+    padding: 1mm;
+}
+#amount{
+    margin-left: 2mm;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.history{
+    background-color:grey;
+    box-shadow: 0 0 0.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    margin: 5px;  
+}
+.list li.plus{
+    border-right: 10px solid green;
+}
+.list li.minus{
+    border-right: 10px solid red;
+}
+.delete-btn{
+    margin-right: 20px;
+    cursor: pointer;
+    background-color:red;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;;
+}
+.list li:hover .delete-btn{
+    opacity: 1;
+}
+
+    
+}
+
+@media screen and (max-width: 421px) {
+    *{
+        box-sizing: border-box;
+    }
+    .fa-solid fa-wallet{
+        color: black;
+    }
+    body{
+        background:white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        box-shadow: 0 0 1rem inset;
+    }
+    .box{
+        box-shadow: 
+        0 0 1rem;
+        padding: 5mm;
+        background: linear-gradient(whitesmoke,lightblue);
+        width: 80%;
+    }
+    #top{
+        margin:0px 10px 25px 5px;
+        box-shadow: 
+        0 0 0.5rem;
+        padding: 5px;
+        font-size: large;
+    }
+    .wallet{
+        margin: 0rem;
+        display:flex;
+        padding: 2px;
+        gap: 3rem;
+        box-shadow: 
+        0 0 0.5rem;
+        font-size: 1.8mm;
+    
+    }
+    .crd-deb{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+        font-size: 3mm;
+    }
+    #credit{
+        box-shadow: 
+        0 0 0.5rem;
+        margin:5px;
+        padding:5px;
+        width: 150px;
+    }
+    #debit{
+        box-shadow: 
+        0 0 0.5rem;
+        margin:5px;
+        padding:5px;
+        width: 150px;
+    }
+    .recent{
+        box-shadow: 
+        0 0 0.5rem;
+        margin:5px;
+        padding:5px;
+        width:100%;
+        height: 100%;
+        font-size: small;
+    }
+    .new{
+        display: flex;
+        flex-direction:column;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 
+        0 0 0.5rem;
+        margin:5px;
+        padding:8px;
+        width:100%;
+        height: 100%;
+    }
+    .form-control{
+        font-size: large;
+        font-weight:bold;
+    }
+    .btn{
+        padding: 5px;
+        margin: 6PX;
+        font-weight: bold;
+        border: 1mm solid;
+        border-radius: 10%;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+    #text,#amount{
+        border: 1mm solid;
+        margin: 1mm;
+        padding: 1mm;
+    }
+    #amount{
+        margin-left: 2mm;
+    }
+    .list{
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .history{
+        background-color:grey;
+        box-shadow: 0 0 0.5rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 5px;
+        margin: 5px;  
+    }
+    .list li.plus{
+        border-right: 10px solid green;
+    }
+    .list li.minus{
+        border-right: 10px solid red;
+    }
+    .delete-btn{
+        margin-right: 20px;
+        cursor: pointer;
+        background-color:red;
+        border: 0;
+        z-index: 10px;
+        color: white;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 2px 5px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%,-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;;
+    }
+    .list li:hover .delete-btn{
+        opacity: 2;
+    }
+        
+    }
